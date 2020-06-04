@@ -1,9 +1,8 @@
 def printSum(x):
     sum = 0
-    while x >= 0:
-        if x % 2 == 0:
-            sum = sum + x
-        x = x - 1
+    for i in range(1, x+1):
+        if i % 2 == 0:
+            sum = sum + i
     return sum
 n = int(input())
 x = printSum(n)
